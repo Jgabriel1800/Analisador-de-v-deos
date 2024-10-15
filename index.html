@@ -6,13 +6,14 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-house" id="nav_logo">Yourhouse</i>
+            <i class="fa-solid fa-house" id="nav_logo"> Yourhouse</i>
 
             <ul id="nav_list">
                 <li class="nav-item active">
@@ -50,6 +51,46 @@
             </button>
         </div>
     </header>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            
+            <div id="cta">
+                <h1 class="title">
+                    Venha conhecer a melhor praia do
+                <span class="span">litoral pernambucano</span>
+                </h1>
+
+                <p class="description"> Aproveite um bom lugar próximo das melhores praias
+                    de Pernambuco. Aproveite o melhor da vida com a Yourhouse.
+                </p>
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">Imagens</a>
+                    
+                    <a href="tel:+81997210000" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (81)9.9721-0000
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-airbnb"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="img/8c88809859150aa24656e414528d5e40.jpg" alt="">
+            </div>
+        </section>
+    </main>
     <script src="javascript/script.js"></script>
 </body>
 </html>

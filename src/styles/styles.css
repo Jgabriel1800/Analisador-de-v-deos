@@ -10,6 +10,9 @@
 body{
     background-color: #d1fdb3;
 }
+section{
+    padding: 28px 8%;
+}
 
 .btn-default{
     border: none;
@@ -27,5 +30,37 @@ body{
 
 .btn-default:hover{
     background-color: #4f8cf8;
+}
+
+#banner img {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+    max-width: 800px; /* Define um limite máximo de largura, ajuste conforme necessário */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.social-medi-buttons{
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.social-media-buttons a:hover{
+    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.1);
 }
 
