@@ -1,0 +1,88 @@
+#fotos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#casas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.casa {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #d1fdb3;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.casa-heart {
+    position: absolute;
+    background-color: #4fa6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #fff9ea;
+    width: 60px;
+    height: 60px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+
+.casa-description{
+    color: #434343;
+    text-align: center;
+
+}
+
+.casa-rate i{
+    color: #4fa6f8;
+}
+
+.casa-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} 
+.casa-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Faz a imagem preencher o contêiner sem distorcer */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+
+@media screen and (max-width: 1170px){
+   #casas{
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   .casa{
+       width: calc(50% - 12px);
+   }
+}
+
+@media screen and (max-width: 600px){
+    .casa{
+        width: 100%;
+    }
+
+    #casa .section-subtitle{
+        text-align: center;
+    }
+}
